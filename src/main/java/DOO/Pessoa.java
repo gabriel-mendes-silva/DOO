@@ -28,6 +28,8 @@ public class Pessoa {
     private String obs;
     private char status;
 
+    private Veiculo veiculo;
+
     public Pessoa(int id, String nome, String fone1, String fone2, String email, String cep, String logradouro, String bairro, String cidade, String complemento, Date dataCadastro, String cpf, String rp, String obs, char status) {
         this.id = id;
         this.nome = nome;
@@ -173,6 +175,14 @@ public class Pessoa {
         else{
             this.status = 'A';
         }
+    }
+
+    public Veiculo getVeiculo() {
+        return veiculo;
+    }
+
+    public void setVeiculo(Veiculo veiculo) {
+        this.veiculo = veiculo;
     }
 
     @Override

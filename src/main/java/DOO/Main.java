@@ -16,6 +16,9 @@ public class Main {
         
         Hospede hospede = new Hospede();
         hospede.setNome("Jurandir");
+
+        Fornecedor fornecedor = new Fornecedor();
+        fornecedor.setNome("Arlete");
         
         Marca marca = new Marca();
         marca.setId(1);
@@ -33,11 +36,9 @@ public class Main {
         veiculo.setId(1);
         veiculo.setStatus('a');
         veiculo.setCor("Cinza");
-        veiculo.setDono(pessoa);
-        veiculo.setDono(hospede);
-        hospede.setCnpj("37837383");
-        
-        System.out.println(veiculo.getDono());
+        fornecedor.setVeiculo(veiculo);
+        System.out.println(fornecedor.getVeiculo().toString());
+
         
         
         

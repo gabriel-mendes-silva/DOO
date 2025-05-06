@@ -14,13 +14,14 @@ public class Veiculo {
     private String cor;
     private char status;
     private Modelo modelo;
-    private Pessoa dono;
 
-    public Veiculo(int id, String cor, char status, Modelo modelo) {
+    private String placa;
+    public Veiculo(int id, String cor, char status, Modelo modelo, String placa) {
         this.id = id;
         this.cor = cor;
         this.status = status;
         this.modelo = modelo;
+        this.placa = placa;
     }
 
     public Veiculo() {
@@ -58,17 +59,22 @@ public class Veiculo {
         this.modelo = modelo;
     }
 
-    public void setDono(Pessoa dono) {
-        this.dono = dono;
+    public String getPlaca() {
+        return placa;
     }
 
-    public Pessoa getDono() {
-        return dono;
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
-    
-    
-    
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "Veiculo{" +
+                "cor='" + cor + '\'' +
+                ", id=" + id +
+                ", status=" + status +
+                ", modelo=" + modelo +
+                ", placa='" + placa + '\'' +
+                '}';
+    }
 }
