@@ -5,13 +5,11 @@
  */
 package DOO;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author aluno
  */
-public class Mian {
+public class Main {
     public static void main(String[] args) {
         Pessoa pessoa = new Pessoa();
         pessoa.setNome("Joana Dark");
